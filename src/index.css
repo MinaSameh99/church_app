@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: #07091a;
+  color: #e2e8f0;
+  direction: rtl;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #0a0f1e; }
+::-webkit-scrollbar-thumb { background: #f5b800; border-radius: 3px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+.fade-up { animation: fadeUp .4s ease forwards; }
+.float   { animation: float 3s ease-in-out infinite; }
